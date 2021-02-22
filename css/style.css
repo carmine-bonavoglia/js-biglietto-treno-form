@@ -13,7 +13,7 @@ body{
 
 /* /Classi Generali */
 
-/* Body */
+/* Box Dati */
 h1, h2{
     text-align: center;
     text-transform: uppercase;
@@ -34,7 +34,7 @@ h1, h2{
 
 .box{
     display: inline-block;
-    width: calc(100 / 3);
+    width: calc(100% / 4);
     text-align: center;
     margin: 20px;
     line-height: 2;
@@ -64,4 +64,35 @@ button{
     margin-top: 20px;
 }
 
-/* Body */
+/* /Box Dati */
+
+/* Box Biglietto */
+.wrapper-2{
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+.dati-biglietto{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.box-grigio,
+.box-dati{
+    width: calc(100% / 5 - 4px);
+    display: inline-block;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.box-grigio{
+    background-color: #808080;
+}
+
+/* /Box Biglietto */
