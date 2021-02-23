@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Biglietto Treno Con Form</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -22,49 +23,56 @@
             </div>
             <div class="box">
                 <label for="distance">Km da percorrere</label><br>
-                <input type="number" id="distance" min="1"  max="1000" placeholder="Km da percorrere"><br>
+                <input class="width-100" type="number" id="distance" min="1"  max="1000" placeholder="Km da percorrere"><br>
             </div>
             <div class="box">
                 <label for="eta">Fascia d'et&agrave;</label><br>
                 <select name="eta" id="eta">
-                    <option value="minorenne">Minorenne</option>
                     <option value="maggiorenne">Maggiorenne</option>
+                    <option value="minorenne">Minorenne</option>
                     <option value="over65">Over 65</option>
                 </select>
             </div>
         </div>
         <div>
-            <button>Genera</button>
-            <button>Annulla</button>
+            <button id="genera">Genera</button>
+            <button id="annulla">Annulla</button>
         </div>
     </div>
 
     <!-- /Box Inserimento Dati -->
 
     <!-- Box A Scomparsa -->
-    <h2>Il tuo biglietto</h2>
-    <div class="wrapper-2">
-        <h3>Dettaglio passeggeri</h3>
-        <div class="dati-biglietto">
-            <div class="box-grigio">
-                <p>NOME PASSEGGERO</p>
-            </div>
-            <div class="box-dati">
-                <p>Offerta</p>
-            </div>
-            <div class="box-dati">
-                <p>Carrozza</p>
-            </div>
-            <div class="box-dati">
-                <p>Codice CP</p>
-            </div>
-            <div class="box-dati">
-                <p>Costo Biglietto</p>
+    <div id="biglietto" class="hidden">
+        <h2>Il tuo biglietto</h2>
+        <div class="wrapper-2">
+            <h3>Dettaglio passeggeri</h3>
+            <div class="dati-biglietto">
+                <div class="box-grigio">
+                    <p class="m-bottom">NOME PASSEGGERO</p>
+                    <p id="nome-passeggero" class="white"></p>
+                </div>
+                <div class="box-dati">
+                    <p class="m-bottom-2">Sconto</p>
+                    <p id="sconto-applicato" class="font-400"></p>
+                </div>
+                <div class="box-dati">
+                    <p class="m-bottom-2">Carrozza</p>
+                    <p id="carrozza" class="font-400"></p>
+                </div>
+                <div class="box-dati">
+                    <p class="m-bottom-2">Codice CP</p>
+                    <p id="codice-cp" class="font-400"></p>
+                </div>
+                <div class="box-dati">
+                    <p class="m-bottom-2">Costo Biglietto</p>
+                    <p id="costo-biglietto" class="font-400"></p>
+                </div>
             </div>
         </div>
     </div>
     <!-- /Box A Scomparsa -->
-
+    
     <script src="js/script.js"></script>
 </body>
 </html>
